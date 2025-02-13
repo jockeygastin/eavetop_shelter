@@ -1,31 +1,47 @@
-import { Button, HStack, Image, Spacer, Text } from '@chakra-ui/react'
-import React from 'react'
+import { Button, HStack, Image, Spacer, Text } from "@chakra-ui/react";
+import React from "react";
 
-const links = ["Home", "About", "Services", "Contact"]
+const links = ["Home", "About", "Services", "Contact"];
 
 const Navbar = () => {
-    return (
-        <>
-            <HStack p={8} >
-                <Image src="/next.svg" alt="logo" h={6} />
+  return (
+    <>
+      <HStack p={8}>
+        <Image src="/next.svg" alt="logo" h={6} />
 
-                <Spacer />
+        <Spacer />
 
-                <HStack gap={8}>
-                    {
-                        links.map((link, i) => (
-                            <Text key={i}>{link}</Text>
-                        ))
-                    }
-                </HStack>
+        <HStack gap={8}>
+          {links.map((link, i) => (
+            <Text key={i}>{link}</Text>
+          ))}
+        </HStack>
 
-                <Spacer />
+        <Spacer />
 
-                <Button variant={'outline'} rounded={'full'} size={'lg'}>Create Account</Button>
-                <Button rounded={'full'} size={'lg'}>Sign In</Button>
-            </HStack>
-        </>
-    )
-}
+        <Button
+          as={"a"}
+          // @ts-ignore
+          href={"/auth/register"}
+          variant={"outline"}
+          rounded={"full"}
+          size={"lg"}
+        >
+          Create Account
+        </Button>
 
-export default Navbar
+        <Button
+          as={"a"}
+          // @ts-ignore
+          href={"/auth/login"}
+          rounded={"full"}
+          size={"lg"}
+        >
+          Sign In
+        </Button>
+      </HStack>
+    </>
+  );
+};
+
+export default Navbar;
