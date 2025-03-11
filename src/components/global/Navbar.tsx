@@ -124,10 +124,10 @@ const Navbar = () => {
                     </Drawer.Title>
                   </Drawer.Header>
 
-                  <Drawer.Body>
+                  <Drawer.Body bgColor={"#ffb200"}>
                     {links.map((link, i) => (
                       <Link href={link.url} key={i} onClick={() => setOpen(false)}>
-                        <Text mt={4} color={"#000"}>
+                        <Text mt={4} color={"#1e3e62"}>
                           {link.label}
                         </Text>
                       </Link>
