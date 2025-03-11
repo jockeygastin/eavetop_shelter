@@ -9,7 +9,7 @@ import {
   Text,
 } from "@chakra-ui/react";
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 import Logo from "./Logo";
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
 import { IoClose } from "react-icons/io5";
@@ -35,6 +35,9 @@ const links = [
 ];
 
 const Navbar = () => {
+  const [open, setOpen] = useState(false)
+
+
   return (
     <>
       <Box
@@ -91,9 +94,9 @@ const Navbar = () => {
           </HStack>
 
           <Box display={["flex", "none"]}>
-            <Drawer.Root>
+            <Drawer.Root open={open} onOpenChange={(e) => setOpen(e.open)}>
               <Drawer.Backdrop />
-              <Drawer.Trigger>
+              <Drawer.Trigger asChild>
                 <IconButton
                   aria-label="Toggle Menu"
                   children={<HiOutlineMenuAlt3 />}
@@ -123,7 +126,7 @@ const Navbar = () => {
 
                   <Drawer.Body>
                     {links.map((link, i) => (
-                      <Link href={link.url} key={i}>
+                      <Link href={link.url} key={i} onClick={() => setOpen(false)}>
                         <Text mt={4} color={"#000"}>
                           {link.label}
                         </Text>

@@ -29,7 +29,7 @@ const page = () => {
   return (
     <>
       {/* <VerticalSpacer /> */}
-      <HStack bgColor={"#1e3e62"} flexWrap={["wrap-reverse", "nowrap"]} p={[2, 0]}>
+      <HStack bgColor={"#1e3e62"} flexWrap={["wrap-reverse", "nowrap"]} p={[2, 0]} mt={"6"}>
         <Image
           src="/roofing.jpg"
           alt="hero"

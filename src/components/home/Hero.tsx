@@ -3,15 +3,17 @@ import React from 'react'
 import { Image, Text, Heading, HeadingPropsProvider, Box, HStack, Stack } from "@chakra-ui/react"
 import Lottie from "lottie-react";
 import animation from "../../../public/lottie/animation.json";
+import VerticalSpacer from "@/components/global/VerticalSpacer";
+
 
 
 const Hero = () => {
   return (
     <>
     <Stack direction={['column', 'row']} alignItems={'center'} justifyContent={'space-between'}
-     bgColor={'#1E3E62'} pt={[10, 0]} height={['60vh', '80vh']}>
+     bgColor={'#1E3E62'} pt={[20, 0]} height={['60vh', '80vh']}>
 
-    <Box px={[8,16]} maxW={['2xl']}>
+    <Box px={[8,16]} maxW={['2xl']} mt={['6', '0']}>
      <Heading size={['3xl', '5xl']} color={'#FFB200'}>
       Realiable Roofing & Fixing Services.
       </Heading> 
@@ -27,7 +29,11 @@ const Hero = () => {
       </Box>
 
       </Stack>
+      <VerticalSpacer />
     </>
+
+     
+    
   )
 }
 
