@@ -19,7 +19,7 @@ const FeedbackSlide = () => {
           <Box>
             <Heading>Sokina Malika</Heading>
             <Text fontSize={"xs"}>
-              Porject Manager
+              Project Manager
             </Text>
           </Box>
         </HStack>
