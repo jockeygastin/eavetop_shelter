@@ -115,12 +115,13 @@ const Navbar = () => {
                       children={<IoClose />}
                       fontSize={"20px"}
                       variant={'ghost'}
+                      color={"#ffb200"}
                     />
                   </Drawer.CloseTrigger>
 
-                  <Drawer.Header>
+                  <Drawer.Header bgColor={"#fff"}>
                     <Drawer.Title>
-                      <Logo color={"#000"} />
+                      <Logo color={"#1e3e62"} />
                     </Drawer.Title>
                   </Drawer.Header>
 
