@@ -2,7 +2,7 @@
 import { PasswordInput } from "@/components/ui/password-input";
 import { toaster } from "@/components/ui/toaster";
 import { processApiRequest } from "@/lib/api";
-import { Button, Image, Field, VStack, Input } from "@chakra-ui/react";
+import { Button, Image, Field, VStack, Input,Heading } from "@chakra-ui/react";
 import React, { useState } from "react";
 
 const page = () => {
@@ -41,7 +41,7 @@ const page = () => {
     <>
       <VStack
         w={"full"}
-        h={"80vh"}
+        h={"90vh"}
         alignItems={"center"}
         justifyContent={"center"}
         p={[4, 6]}
@@ -50,13 +50,14 @@ const page = () => {
         <VStack
           bgColor={"#fff"}
           w={"full"}
+          h={"60vh"}
           maxW={"480px"}
           p={6}
           py={12}
           gap={8}
           border={"1px solid #DADADA"}
         >
-          <Image src="/next.svg" h={6} mb={"20"} />
+          <Heading size={"2xl"} color={"#1E3E62"}>Eavetop Shelter</Heading>
 
           <Field.Root>
             <Field.Label>Full Name</Field.Label>
@@ -86,7 +87,7 @@ const page = () => {
             />
           </Field.Root>
 
-          <Button minW={"36"} onClick={handleRegister}>
+          <Button minW={"36"} onClick={handleRegister} bgColor={"#ffb200"} _hover={{bgColor:"#1e3e62"}}>
             Register
           </Button>
         </VStack>
