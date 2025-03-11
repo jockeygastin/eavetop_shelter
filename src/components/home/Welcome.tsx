@@ -13,6 +13,7 @@ const Welcome = () => {
         direction={["column", "row"]}
         alignItems={"center"}
         justifyContent={"space-between"}
+        bgColor={["#fff"]}
       >
         <Image w={["full", "50%"]} src="/welcome.svg" pt={[6]} />
         {/* <Lottie animationData={animation} loop={true} /> */}

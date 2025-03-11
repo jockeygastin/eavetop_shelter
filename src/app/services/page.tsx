@@ -86,6 +86,7 @@ const page = () => {
         mx={"auto"}
         maxW={["100%", "75%"]}
         flexWrap={'wrap'}
+        
       >
         {/* <VStack gap={"4rem"} w={"full"} pos={'relative'} top={'4rem'}> */}
 
