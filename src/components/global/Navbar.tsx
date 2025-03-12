@@ -134,7 +134,34 @@ const Navbar = () => {
                       </Link>
                     ))}
                   </Drawer.Body>
-                  <Drawer.Footer />
+                  <Drawer.Footer>
+                  <Button
+              as={"a"}
+              // @ts-ignore
+              href={"/auth/register"}
+              variant={"outline"}
+              rounded={"full"}
+              size={"lg"}
+              color={"#ffb200"}
+              _hover={{
+                color: "#000",
+              }}
+            >
+              Create Account
+            </Button>
+
+            <Button
+                  as={"a"}
+                  href={"/auth/login"}
+                  rounded={"full"}
+                  size={"lg"}
+                  bgColor={"#1e3e62"}
+                  color={"#fff"}
+                  _hover={{ bgColor: "#ffb200", color:"#fff"}}>
+                    Sign In
+
+            </Button>
+                    </Drawer.Footer> 
                 </Drawer.Content>
               </Drawer.Positioner>
             </Drawer.Root>
