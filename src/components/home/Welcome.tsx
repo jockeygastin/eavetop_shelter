@@ -24,14 +24,14 @@ const Welcome = () => {
             <span style={{ color: "#ffb200" }}>goal is to fix your Roof</span>
           </Heading>
           <br />
-          <Text fontWeight={"semibold"} textStyle={["md", "lg"]}>
+          <Text fontWeight={"semibold"} textStyle={["md", "lg"]} color={'#000'}>
             {" "}
             Everything we do at Home instead CareGiver is driven by our
             universal mission:To enhance the lives of aging adults and their
             families.
           </Text>
           <br />
-          <Text textStyle={["sm", "md"]}>
+          <Text textStyle={["sm", "md"]} color={'#000'}>
             It is a ling established fact that a reader will be distracted by
             the readable content of a page when looking at its layout. The point
             of using Lorem Ipsum is that has a more-or-less normal distribution

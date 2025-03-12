@@ -106,7 +106,7 @@ const Navbar = () => {
               </Drawer.Trigger>
 
               <Drawer.Positioner>
-                <Drawer.Content>
+                <Drawer.Content bgColor={"#fff"}>
                   <Drawer.CloseTrigger>
                     <IconButton
                       pos={"absolute"}
@@ -119,7 +119,7 @@ const Navbar = () => {
                     />
                   </Drawer.CloseTrigger>
 
-                  <Drawer.Header bgColor={"#fff"}>
+                  <Drawer.Header>
                     <Drawer.Title>
                       <Logo color={"#1e3e62"} />
                     </Drawer.Title>
