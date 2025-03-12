@@ -77,7 +77,7 @@ const page = () => {
         <Box w={"64px"} p={"1px"} bgColor={"#ffb200"}></Box>
       </HStack>
 
-      <HStack
+      <Stack
         direction={["column", "row"]}
         alignItems={"center"}
         justifyContent={"center"}
@@ -85,7 +85,6 @@ const page = () => {
         gap={"4rem"}
         mx={"auto"}
         maxW={["100%", "75%"]}
-        flexWrap={'wrap'}
         
       >
         {/* <VStack gap={"4rem"} w={"full"} pos={'relative'} top={'4rem'}> */}
@@ -170,7 +169,7 @@ const page = () => {
         </Box>
 
         {/* </VStack> */}
-      </HStack>
+      </Stack>
 
       <VerticalSpacer h={["10vh","30vh"]} />
     </>
